@@ -100,7 +100,7 @@ export function Layout({ children }) {
                         </span>
                     </div>
                 </Header>
-                <AntdLayout>
+                <AntdLayout className={styles.sectionInner}>
                     <Sider width={200}>
                         <Menu
                             mode="inline"
@@ -111,14 +111,8 @@ export function Layout({ children }) {
                             onClick={handleMenuClick}
                         />
                     </Sider>
-                    <AntdLayout style={{ padding: '0 24px 24px' }}>
-                        <Breadcrumb style={{ margin: '16px 0' }}>
-                            <Breadcrumb.Item>Home</Breadcrumb.Item>
-                            <Breadcrumb.Item>List</Breadcrumb.Item>
-                            <Breadcrumb.Item>App</Breadcrumb.Item>
-                        </Breadcrumb>
-                        <Content>
-                            Content
+                    <AntdLayout className={styles.sectionContent}>
+                        <Content className={styles.content}>
                             {children}
                         </Content>
                     </AntdLayout>

@@ -15,3 +15,17 @@
     font-size: 16px;
     font-weight: 600;
 }
+
+.sectionInner {
+    height: calc(100vh-64px);
+}
+
+.sectionContent {
+ padding: 32px;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 16px;
+}
+ 
