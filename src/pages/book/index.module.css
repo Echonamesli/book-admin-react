@@ -1,0 +1,4 @@
+.tableWrap {
+    overflow: auto;
+    height: cal(100% - 80px);
+}

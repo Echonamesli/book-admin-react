@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import { DownOutlined, SmileOutlined } from '@ant-design/icons/lib';
 import type { MenuProps } from 'antd/lib';
 import { Breadcrumb, Layout as AntdLayout, Menu, theme, Dropdown, Space } from 'antd/lib';
@@ -69,7 +69,7 @@ const USER_ITEMS: MenuProps['items'] = [
     }
 ];
 
-export function Layout({ children }) {
+export function Layout({ children}: {children:ReactNode} ) {
     const router = useRouter()
     const handleMenuClick: MenuProps['onClick'] = ({ key }) => {
         router.push(key)
